@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        header {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+
+
+
+        nav {
+            margin: 0px;
+            padding: 20px;
+            float: right;
+            z-index: 2;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            /* Perbaikan di sini */
+
+        }
+
+
+        nav li {
+            color: white;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            margin: 0 15px;
+            /* Perbaikan di sini */
+        }
+
+        li {
+            margin: 0;
+            padding: 20px 0;
+            float: right;
+            z-index: 2;
+        }
+
+        main h1 {
+            color: black;
+            font-family: "raleway", sans-serif;
+            font-weight: 600;
+            font-size: 70px;
+            margin-top: 0px;
+            padding-top: 80px;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+        }
+
+        main {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            top: 80px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 5;
+        }
+
+        footer p {
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+
+        .container {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .jumbotron {
+            height: 800px;
+            background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            /* Perbaikan di sini */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Perbaikan di sini */
+            color: white;
+            text-align: center;
+            /* Perbaikan di sini */
+        }
+
+        .btn-main {
+            background-color: black;
+            color: white;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 1.3px;
+            padding: 16px 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .btn-default {
+            font-family: "Raleway", sans-serif;
+            font-weight: 600px;
+            font-size: 10px;
+            letter-spacing: 1.3px;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .supporting {
+            padding-top: 120px;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+        }
+
+        .supporting .col {
+            font-family: "Raleway", sans-serif;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .supporting img {
+            height: 32px;
+        }
+
+        .supporting h2 {
+            font-weight: 600;
+            font-size: 23px;
+            text-transform: uppercase;
+        }
+
+        .supporting p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .supporting a {
+            background-color: white;
+            color: black;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 1.3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+        }
+
+        @media (max-width: 500px) {
+            main h1 {
+                font-size: 50px;
+                padding: 0 40px;
+            }
+
+            .supporting .col {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> About </li>
+                <li> Work </li>
+                <li> Team </li>
+                <li> Contact </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>We are Broadway</h1>
+                <a href="#" class="btn-main"> Get Started </a>
+            </div>
+        </div>
+    </main>
+    <section class="supporting">
+        <div class="container">
+            <div class="col">
+                <img src="media/design.svg" alt="Design Icon">
+                <h2>Design</h2>
+                <p>Make your projects look great and interact beautifully.</p>
+                <a href="#"> Learn More</a>
+            </div>
+            <div class="col">
+                <img src="media/develop.svg" alt="Develop Icon">
+                <h2>Develop</h2>
+                <p>Use modern tools to turn your Design into a web site</p>
+                <a href="#"> Learn More</a>
+                <br>
+            </div>
+            <div class="col">
+                <img src="media/deploy.svg" alt="Deploy Icon">
+                <h2>Deploy</h2>
+                <p>Use modern tools to turn your design into a web site</p>
+                <a href="#"> Learn More</a>
+
+            </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p> Broadway 2017</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
